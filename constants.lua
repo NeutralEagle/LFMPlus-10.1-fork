@@ -49,6 +49,15 @@ ns.constants = {
     ["HOV"] = { cmID = 200, aID = 461 },
     ["TJS"] = { cmID = 2, aID = 1192 },
     ["RLP"] = { cmID = 399, aID = 1176 },
+---@DF10.1
+	["VP"] = { cmID = 438, aID = 1195 },
+    ["NL"] = { cmID = 206, aID = 462 },
+    ["FH"] = { cmID = 245, aID = 518 },
+    ["UNDR"] = { cmID = 251, aID = 507 },
+    ["ULD"] = { cmID = 403, aID = 1188 },
+    ["BH"] = { cmID = 405, aID = 1164 },
+    ["NELT"] = { cmID = 404, aID = 1172 },
+    ["HOI"] = { cmID = 406, aID = 1168 },
   },
   timewalk = {
     [459] = { shortName = "EOA" },
@@ -83,6 +92,15 @@ ns.constants = {
     [200] = { shortName = "HOV", activityId = 461 },
     [2] = { shortName = "TJS", activityId = 1192 },
     [399] = { shortName = "RLP", activityId = 1176 },
+---@DF10.1
+	[438] = { shortName = "VP", activityId = 1195 },
+    [206] = { shortName = "NL", activityId = 462 },
+    [245] = { shortName = "FH", activityId = 518 },
+    [251] = { shortName = "UNDR", activityId = 507 },
+    [403] = { shortName = "ULD", activityId = 1188 },
+    [405] = { shortName = "BH", activityId = 1164 },
+    [404] = { shortName = "NELT", activityId = 1172 },
+    [406] = { shortName = "HOI", activityId = 1168 },
   },
   trackedEvents = {
     ["LFG_LIST_AVAILABILITY_UPDATE"] = false,
@@ -153,7 +171,16 @@ ns.constants = {
         [466] = "COS",
         [461] = "HOV",
         [1192] = "TJS",
-        [1176] = "RLP"
+        [1176] = "RLP",
+---@DF10.1
+		[1195] = "VP",
+        [462] = "NL",
+        [518] = "FH",
+        [507] = "UNDR",
+        [1188] = "ULD",
+        [1164] = "BH",
+        [1172] = "NELT",
+        [1168] = "HOI"
       }
     }
   },
@@ -190,4 +217,13 @@ ns.constants.actvityInfo = {
   [461] = ns.constants.mapInfo[200],
   [1192] = ns.constants.mapInfo[2],
   [1176] = ns.constants.mapInfo[399],
+  ---@DF10.1
+  [1195] = ns.constants.mapInfo[438],
+  [462] = ns.constants.mapInfo[206],
+  [518] = ns.constants.mapInfo[245],
+  [507] = ns.constants.mapInfo[251],
+  [1188] = ns.constants.mapInfo[403],
+  [1164] = ns.constants.mapInfo[405],
+  [1172] = ns.constants.mapInfo[404],
+  [1168] = ns.constants.mapInfo[406],
 }
